@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
