@@ -2,6 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { Form } from "./components/Form";
 import { formatCurrency } from "./utils/currency";
 import { toast } from "react-toastify";
+import { PreviewContent } from "./components/PreviewContent";
 
 const dailyWorkingHours = ["9h", "10h", "12h", "14h"];
 
@@ -210,7 +211,11 @@ export function App() {
           </form>
         ) : (
           <div>
-            <h2 className="text-2xl font-black">Summary</h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-black">Summary</h2>
+
+              <PreviewContent />
+            </div>
 
             <div className="mt-4">
               <div className="flex flex-col gap-3">

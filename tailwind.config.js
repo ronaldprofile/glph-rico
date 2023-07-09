@@ -8,7 +8,9 @@ export default {
           "gray-secondary": "#202024",
           "gray-primary": "#121214",
 
-          "gray-light": "#E1E1E6"
+          "gray-light": "#E1E1E6",
+          "preview-content": "rgb(40, 39, 46)",
+          "preview-content-text": " rgb(168, 168, 179)"
         }
       }
     }
