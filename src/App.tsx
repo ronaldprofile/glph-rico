@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Form } from "./components/Form";
 import { formatCurrency } from "./utils/currency";
+import { toast } from "react-toastify";
 
 const dailyWorkingHours = ["9h", "10h", "12h", "14h"];
 
@@ -47,7 +48,7 @@ export function App() {
     const { formFieldsEmpty } = handleValidateFormFields();
 
     if (formFieldsEmpty) {
-      alert("Preencha todos os campos");
+      toast.error("Preencha todos os campos");
       return;
     }
 
